@@ -1,4 +1,7 @@
 <?php
+/**
+ * 公共上传，都能使用
+ */
 namespace ttiantianle\upload;
 class Upload
 {
