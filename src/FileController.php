@@ -24,15 +24,20 @@ class FileController extends Controller
      * 上传图片，todo 可能存在的问题，上传同名文件会被覆盖,换一个命名规则
      * @param string $path
      * @param string $maxSize
-     * @param array $allowExt
+     * @param array $allowExt  ['image', 'html', 'text', 'video', 'audio', 'flash','pdf']
      * @return array
      */
-    public function actionUploadFile($path='',$maxSize='20480000',$allowExt=['jpg','gif','png','jpeg'])
+    public function actionUploadFile()
     {
+        $allowExt= \Yii::$app->request->get('type','image');
+        $path=\Yii::$app->request->get('path','');
+        $maxSize=\Yii::$app->request->get('size','20480000');
         $instance = UploadedFile::getInstanceByName('file');
         if (!$instance) return ['error'=>'请选择文件'];
         $ext = $instance->getExtension();
-        if (!in_array($ext,$allowExt)){
+        $val = self::validateExt($ext,$allowExt);
+
+        if (!$val){
             return ['error'=>"不支持该文件类型"];
         }
         if ($instance->size > $maxSize){
@@ -77,5 +82,42 @@ class FileController extends Controller
             return $res.'K';
         }
         return $size.'B';
+    }
+
+    /**
+     * ['image', 'html', 'text', 'video', 'audio', 'flash', 'object','pdf','other']
+     *
+     */
+    private function validateExt($ext,$type='image')
+    {
+        if (!in_array($type, ['image', 'html', 'text', 'video', 'audio', 'flash', 'pdf'])){
+            return false;
+        }
+        $val = false;
+        switch ($type){
+            case 'image':
+                $val = in_array($ext,['jpg','gif','png','jpeg']) ? true: false;
+                break;
+            case 'html':
+                $val = in_array($ext,['html','htm','shtml','shtm']) ? true: false;
+                break;
+            case 'text':
+                $val = in_array($ext,['txt','docx','doc','xls']) ? true: false;
+                break;
+            case 'video':
+                $val = in_array($ext,['flv','avi','mov','mp4','wmv']) ? true: false;
+                break;
+            case 'audio':
+                $val = in_array($ext,['mp3','wma','midi','wav']) ? true: false;
+                break;
+            case 'flash':
+                $val = in_array($ext,['swf','exe']) ? true: false;
+                break;
+            case 'pdf':
+                $val = in_array($ext,['pdf']) ? true: false;
+                break;
+            default:$val=false;break;
+        }
+        return $val;
     }
 }

@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="082f6239-9c4f-407e-a512-e6e2a52d568a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Formatter.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Upload.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Upload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UploadWidgets.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/UploadWidgets.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +84,8 @@
       <workItem from="1590795478493" duration="2737000" />
       <workItem from="1590804114857" duration="6263000" />
       <workItem from="1590889615266" duration="136000" />
-      <workItem from="1590889813936" duration="35000" />
+      <workItem from="1590889813936" duration="195000" />
+      <workItem from="1590899692353" duration="35000" />
     </task>
     <servers />
   </component>

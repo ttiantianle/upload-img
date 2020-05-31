@@ -23,21 +23,21 @@ class UploadWidgets
      */
     private function generatePreview($file,$type='image')
     {
-       if (!in_array($type,['image', 'html', 'text', 'video', 'audio', 'flash', 'object','pdf','other'])){
-           return ["[]","[]"];
-       }
-       if (!$file) return ["[]","[]"];
-       if (!is_array($file)) $file=[$file];
-       $preview = [];
-       $previewConfig = [];
-       foreach ($file as $v)
-       {
-           $preview[] =$v;
-           $previewConfig[] = array('key'=>$v,'type'=>$type);
-       }
-       $initialPreview = '["'.implode('","',$preview).'"]';
-       $initialPreviewConfig = json_encode($previewConfig,true);
-       return [$initialPreview,$initialPreviewConfig];
+        if (!in_array($type,['image', 'html', 'text', 'video', 'audio', 'flash', 'object','pdf'])){
+            return ["[]","[]"];
+        }
+        if (!$file) return ["[]","[]"];
+        if (!is_array($file)) $file=[$file];
+        $preview = [];
+        $previewConfig = [];
+        foreach ($file as $v)
+        {
+            $preview[] =$v;
+            $previewConfig[] = array('key'=>$v,'type'=>$type);
+        }
+        $initialPreview = '["'.implode('","',$preview).'"]';
+        $initialPreviewConfig = json_encode($previewConfig,true);
+        return [$initialPreview,$initialPreviewConfig];
 
     }
 
@@ -49,37 +49,35 @@ class UploadWidgets
     {
         $view = self::getVIew();
 
-        $view->registerCssFile("/fileinput/css/fileinput.css");
-        $view->registerJsFile('/fileinput/js/fileinput.js',['depends'=>'yii\web\YiiAsset','position'=>\yii\web\View::POS_HEAD]);
-        $view->registerJsFile("/fileinput/js/locales/zh.js",['depends'=>'yii\web\YiiAsset','position'=>\yii\web\View::POS_HEAD]);
+        $view->registerCssFile("/bup/css/fileinput.css");
+        $view->registerJsFile('/bup/js/fileinput.js',['depends'=>'yii\web\YiiAsset','position'=>\yii\web\View::POS_HEAD]);
+        $view->registerJsFile("/bup/js/locales/zh.js",['depends'=>'yii\web\YiiAsset','position'=>\yii\web\View::POS_HEAD]);
 
 //        return $view;
     }
 
     /**
-     * todo 静态资源被注册多次？/
      * 虽然可以上传多种类型，但是每次上传只允许一种，比如多文件上传，只能同时上传一种类型文件
      * @param string $inputId
      * @param string $arrtValue 单文件时是字符串，多文件时需要传数组
      * @param int $maxFileCount
-     * @param string $type ['image', 'html', 'text', 'video', 'audio', 'flash', 'object','pdf','other']
+     * @param string $type ['image', 'html', 'text', 'video', 'audio', 'flash', 'object','pdf']
      * @return string
      */
-    public static function uploadFile($inputId='',$arrtValue='',$maxFileCount =1,$type="image")
+    public static function uploadFile($inputId='',$arrtValue='',$maxFileCount =1,$type="image",$path='',$size='20480000')
     {
 
         $view = Yii::$app->getView();
         self::registerStaticFile();
         $uniqId = self::randomFieldName();
         $uploadInputId = 'upload-'.$uniqId;
-
         list($initialPreview,$initialPreviewConfig) = self::generatePreview($arrtValue);
         $js = <<<JS
 $(function(){
     // console.log('$initialPreview')
     $('#$uploadInputId').fileinput({
         language: 'zh',
-        uploadUrl: '?r=file/upload-file',
+        uploadUrl: '?r=file/upload-file&type=$type&path=$path&size=$size',
         deleteUrl: '?r=file/del-file',
         overwriteInitial: false,
         allowedFileTypes: [$type],
@@ -89,10 +87,11 @@ $(function(){
         initialPreview:$initialPreview,
         initialPreviewConfig:$initialPreviewConfig,
     })});
+
+
 $('#$uploadInputId').on('fileuploaded', function(event, data, previewId, index) {
   var form = data.form, files = data.files, extra = data.extra,
       response = data.response, reader = data.reader;
-  // console.log($('#$uploadInputId').data('fileinput').initialPreview)
   if (!response.filelink){
       alert(response.error)
         return false;
@@ -106,12 +105,13 @@ $('#$uploadInputId').on('fileuploaded', function(event, data, previewId, index) 
        $('#$inputId').val(JSON.stringify(fileUrl));
    }
 });
-
+$('#$uploadInputId').on('fileselect', function(event, numFiles, label) {
+        console.log("fileselect");
+    });
 $('#$uploadInputId').on('filepredelete', function(event, key) {
-    // console.log($('#$uploadInputId').data('fileinput'))
    return !confirm("确定删除吗？")
 });
-//todo delete 去空
+
 $('#$uploadInputId').on('filedeleted', function(event, key) {
     if ($maxFileCount>1){
         const imgurl = $('#$uploadInputId').data('fileinput').initialPreview.filter(Boolean)
@@ -121,17 +121,17 @@ $('#$uploadInputId').on('filedeleted', function(event, key) {
     }
    
 });
-$('#$uploadInputId').on('fileuploaderror', function(event, data, msg) {
- alert("上传失败");
-});
+//$('#$uploadInputId').on('fileuploaderror', function(event, data, msg) {
+// alert("上传失败");
+//});
 $('#$uploadInputId').on('filedeleteerror', function(event, data, msg) {
  alert("删除失败");
 });
 JS;
 
 
-    $view->registerJs($js);
-    $multiple = $maxFileCount>1? "multiple " : "";
+        $view->registerJs($js);
+        $multiple = $maxFileCount>1? "multiple " : "";
         return <<<HTML
 <div class="form-group">
 <input type="file" id="$uploadInputId" name="file" $multiple />
