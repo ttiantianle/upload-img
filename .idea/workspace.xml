@@ -2,57 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="082f6239-9c4f-407e-a512-e6e2a52d568a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/FileController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UploadWidgets.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Formatter.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/css/fileinput.css" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/css/fileinput.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/css/fileinput.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/css/fileinput.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/examples/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/examples/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/img/loading-sm.gif" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/img/loading-sm.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/img/loading.gif" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/img/loading.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/jquery插件库.url" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/jquery插件库.url" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/js/fileinput.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/fileinput.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/js/fileinput.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/fileinput.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/js/locales/LANG.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/LANG.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/js/locales/ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/ar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/js/locales/bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/bg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/js/locales/ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/ca.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/js/locales/cr.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/cr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/js/locales/cz.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/cz.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/js/locales/da.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/da.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/js/locales/de.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/de.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/js/locales/el.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/el.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/js/locales/es.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/es.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/js/locales/fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/fa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/js/locales/fi.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/fi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/js/locales/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/fr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/js/locales/hu.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/hu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/js/locales/id.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/id.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/js/locales/it.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/it.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/js/locales/ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/ja.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/js/locales/nl.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/nl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/js/locales/pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/pl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/js/locales/pt-BR.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/pt-BR.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/js/locales/pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/pt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/js/locales/ro.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/ro.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/js/locales/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/ru.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/js/locales/sk.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/sk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/js/locales/th.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/th.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/js/locales/tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/tr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/js/locales/uk.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/uk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/js/locales/vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/vi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/js/locales/zh-TW.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/zh-TW.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/js/locales/zh.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/zh.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/js/plugins/canvas-to-blob.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/plugins/canvas-to-blob.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/js/plugins/canvas-to-blob.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/plugins/canvas-to-blob.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/js/plugins/purify.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/plugins/purify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/js/plugins/purify.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/plugins/purify.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/js/plugins/sortable.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/plugins/sortable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/js/plugins/sortable.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/plugins/sortable.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/sass/fileinput.scss" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/sass/fileinput.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/themes/fa/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/themes/fa/theme.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/themes/gly/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/themes/gly/theme.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-fileinput/www.jq22.com.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/www.jq22.com.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Upload.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Upload.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -90,12 +41,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\upload\vendor" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\xampp\htdocs\upload\src" />
       <recent name="D:\xampp\htdocs\upload" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\xampp\htdocs\upload\vendor" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -131,7 +82,9 @@
       <workItem from="1590758331888" duration="617000" />
       <workItem from="1590768720930" duration="513000" />
       <workItem from="1590795478493" duration="2737000" />
-      <workItem from="1590804114857" duration="6179000" />
+      <workItem from="1590804114857" duration="6263000" />
+      <workItem from="1590889615266" duration="136000" />
+      <workItem from="1590889813936" duration="35000" />
     </task>
     <servers />
   </component>

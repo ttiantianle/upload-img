@@ -1,6 +1,6 @@
 <?php
 /**
- * 公共上传，都能使用
+ * 公共上传，都能使用，如果使用yii项目可以不引入此文件
  */
 namespace ttiantianle\upload;
 class Upload
