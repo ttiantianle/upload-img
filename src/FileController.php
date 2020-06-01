@@ -1,5 +1,5 @@
 <?php
-namespace app\controllers; //自定义命名空间，放到自己相放的位置 common/controllers
+namespace ttiantianle\upload; //自定义命名空间，放到自己相放的位置 common/controllers
 use yii\web\Controller;
 
 use yii\web\Response;
@@ -48,10 +48,12 @@ class FileController extends Controller
         }
 
         if (!$path){
-            if (!is_dir('uploads')){
-                mkdir("uploads",'755');
+            $basePath = \Yii::$app->basePath;
+            $path=$basePath.DIRECTORY_SEPARATOR.'uploads'.DIRECTORY_SEPARATOR;
+            if (!is_dir($path)){
+                mkdir($path,'755');
             }
-            $url = 'uploads/' . $instance->baseName . '.' . $instance->extension;
+            $url = $path . $instance->baseName . '.' . $instance->extension;
         }
 
         if ($path && is_dir($path)){

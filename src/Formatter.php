@@ -9,7 +9,7 @@
 ],
  *
  */
-namespace app\widgets;
+namespace ttiantianle\upload;
 
 use yii\bootstrap\Html;
 

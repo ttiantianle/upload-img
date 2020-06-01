@@ -3,7 +3,7 @@
  * 中文：http://bootstrap-fileinput.com/useage.html
  * 官网文档：https://plugins.krajee.com/file-input
  */
-namespace app\widgets;
+namespace ttiantianle\upload;
 
 use Yii;
 use yii\helpers\Console;
@@ -48,7 +48,7 @@ class UploadWidgets
     private function registerStaticFile()
     {
         $view = self::getVIew();
-
+//        $staticPath =
         $view->registerCssFile("/bup/css/fileinput.css");
         $view->registerJsFile('/bup/js/fileinput.js',['depends'=>'yii\web\YiiAsset','position'=>\yii\web\View::POS_HEAD]);
         $view->registerJsFile("/bup/js/locales/zh.js",['depends'=>'yii\web\YiiAsset','position'=>\yii\web\View::POS_HEAD]);
