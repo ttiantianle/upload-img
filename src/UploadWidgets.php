@@ -11,6 +11,7 @@ use yii\web\View;
 
 class UploadWidgets
 {
+    private static $staticRegisterInstance = false;
     private function getVIew(){
         return Yii::$app->getView();
     }
@@ -47,12 +48,13 @@ class UploadWidgets
      */
     private function registerStaticFile()
     {
+        if (self::$staticRegisterInstance) return;
         $view = self::getVIew();
 //        $staticPath =
         $view->registerCssFile("/bup/css/fileinput.css");
         $view->registerJsFile('/bup/js/fileinput.js',['depends'=>'yii\web\YiiAsset','position'=>\yii\web\View::POS_HEAD]);
         $view->registerJsFile("/bup/js/locales/zh.js",['depends'=>'yii\web\YiiAsset','position'=>\yii\web\View::POS_HEAD]);
-
+        self::$staticRegisterInstance = true;
 //        return $view;
     }
 
