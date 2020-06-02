@@ -50,10 +50,11 @@ class UploadWidgets
     {
         if (self::$staticRegisterInstance) return;
         $view = self::getVIew();
-//        $staticPath =
-        $view->registerCssFile("/bup/css/fileinput.css");
-        $view->registerJsFile('/bup/js/fileinput.js',['depends'=>'yii\web\YiiAsset','position'=>\yii\web\View::POS_HEAD]);
-        $view->registerJsFile("/bup/js/locales/zh.js",['depends'=>'yii\web\YiiAsset','position'=>\yii\web\View::POS_HEAD]);
+        $basePath = Yii::$app->basePath;
+        $staticPath = $basePath.'/vendor/ttiantianle/upload/fileinput';
+        $view->registerCssFile($staticPath."/css/fileinput.css");
+        $view->registerJsFile($staticPath.'/js/fileinput.js',['depends'=>'yii\web\YiiAsset','position'=>\yii\web\View::POS_HEAD]);
+        $view->registerJsFile($staticPath."/js/locales/zh.js",['depends'=>'yii\web\YiiAsset','position'=>\yii\web\View::POS_HEAD]);
         self::$staticRegisterInstance = true;
 //        return $view;
     }
