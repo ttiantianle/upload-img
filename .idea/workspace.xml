@@ -2,67 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="082f6239-9c4f-407e-a512-e6e2a52d568a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/upload.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/upload.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/css/fileinput.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/css/fileinput.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/css/fileinput.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/css/fileinput.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/examples/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/examples/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/img/loading-sm.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/img/loading-sm.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/img/loading.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/img/loading.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/jquery插件库.url" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/jquery插件库.url" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/js/fileinput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/js/fileinput.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/js/fileinput.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/js/fileinput.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/js/locales/LANG.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/js/locales/LANG.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/js/locales/ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/js/locales/ar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/js/locales/bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/js/locales/bg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/js/locales/ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/js/locales/ca.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/js/locales/cr.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/js/locales/cr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/js/locales/cz.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/js/locales/cz.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/js/locales/da.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/js/locales/da.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/js/locales/de.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/js/locales/de.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/js/locales/el.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/js/locales/el.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/js/locales/es.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/js/locales/es.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/js/locales/fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/js/locales/fa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/js/locales/fi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/js/locales/fi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/js/locales/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/js/locales/fr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/js/locales/hu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/js/locales/hu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/js/locales/id.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/js/locales/id.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/js/locales/it.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/js/locales/it.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/js/locales/ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/js/locales/ja.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/js/locales/nl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/js/locales/nl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/js/locales/pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/js/locales/pl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/js/locales/pt-BR.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/js/locales/pt-BR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/js/locales/pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/js/locales/pt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/js/locales/ro.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/js/locales/ro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/js/locales/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/js/locales/ru.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/js/locales/sk.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/js/locales/sk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/js/locales/th.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/js/locales/th.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/js/locales/tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/js/locales/tr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/js/locales/uk.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/js/locales/uk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/js/locales/vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/js/locales/vi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/js/locales/zh-TW.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/js/locales/zh-TW.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/js/locales/zh.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/js/locales/zh.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/js/plugins/canvas-to-blob.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/js/plugins/canvas-to-blob.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/js/plugins/canvas-to-blob.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/js/plugins/canvas-to-blob.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/js/plugins/purify.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/js/plugins/purify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/js/plugins/purify.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/js/plugins/purify.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/js/plugins/sortable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/js/plugins/sortable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/js/plugins/sortable.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/js/plugins/sortable.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/sass/fileinput.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/sass/fileinput.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/themes/fa/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/themes/fa/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/themes/gly/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/themes/gly/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileinput/www.jq22.com.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileinput/www.jq22.com.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UploadWidgets.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/UploadWidgets.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/css/fileinput.css" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/css/fileinput.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/css/fileinput.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/css/fileinput.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/examples/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/examples/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/img/loading-sm.gif" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/img/loading-sm.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/img/loading.gif" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/img/loading.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/jquery插件库.url" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/jquery插件库.url" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/js/fileinput.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/fileinput.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/js/fileinput.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/fileinput.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/js/locales/LANG.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/LANG.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/js/locales/ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/ar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/js/locales/bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/bg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/js/locales/ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/ca.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/js/locales/cr.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/cr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/js/locales/cz.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/cz.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/js/locales/da.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/da.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/js/locales/de.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/de.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/js/locales/el.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/el.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/js/locales/es.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/es.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/js/locales/fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/fa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/js/locales/fi.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/fi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/js/locales/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/fr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/js/locales/hu.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/hu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/js/locales/id.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/id.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/js/locales/it.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/it.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/js/locales/ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/ja.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/js/locales/nl.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/nl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/js/locales/pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/pl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/js/locales/pt-BR.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/pt-BR.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/js/locales/pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/pt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/js/locales/ro.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/ro.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/js/locales/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/ru.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/js/locales/sk.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/sk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/js/locales/th.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/th.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/js/locales/tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/tr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/js/locales/uk.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/uk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/js/locales/vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/vi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/js/locales/zh-TW.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/zh-TW.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/js/locales/zh.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/locales/zh.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/js/plugins/canvas-to-blob.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/plugins/canvas-to-blob.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/js/plugins/canvas-to-blob.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/plugins/canvas-to-blob.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/js/plugins/purify.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/plugins/purify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/js/plugins/purify.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/plugins/purify.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/js/plugins/sortable.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/plugins/sortable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/js/plugins/sortable.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/js/plugins/sortable.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/sass/fileinput.scss" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/sass/fileinput.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/themes/fa/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/themes/fa/theme.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/themes/gly/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/themes/gly/theme.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileinput/www.jq22.com.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fileinput/www.jq22.com.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/autoload.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,8 +86,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\xampp\htdocs\upload" />
       <recent name="D:\xampp\htdocs\upload\src" />
+      <recent name="D:\xampp\htdocs\upload" />
       <recent name="D:\xampp\htdocs\upload\vendor" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -145,7 +136,7 @@
       <workItem from="1591023179023" duration="1794000" />
       <workItem from="1591025224526" duration="580000" />
       <workItem from="1591060164196" duration="980000" />
-      <workItem from="1591081161862" duration="242000" />
+      <workItem from="1591081161862" duration="683000" />
     </task>
     <servers />
   </component>

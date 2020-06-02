@@ -51,7 +51,7 @@ class UploadWidgets
         if (self::$staticRegisterInstance) return;
         $view = self::getVIew();
         $basePath = Yii::$app->basePath;
-        $staticPath = $basePath.'/vendor/ttiantianle/upload/fileinput';
+        $staticPath = $basePath.'/vendor/ttiantianle/upload/src/fileinput';
         $view->registerCssFile($staticPath."/css/fileinput.css");
         $view->registerJsFile($staticPath.'/js/fileinput.js',['depends'=>'yii\web\YiiAsset','position'=>\yii\web\View::POS_HEAD]);
         $view->registerJsFile($staticPath."/js/locales/zh.js",['depends'=>'yii\web\YiiAsset','position'=>\yii\web\View::POS_HEAD]);
