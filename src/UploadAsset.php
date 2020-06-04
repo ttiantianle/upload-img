@@ -27,9 +27,11 @@ class UploadAsset extends AssetBundle
         "js/locales/zh.js",
     ];
     public $jsOptions = [
-      'position'=>View::POS_HEAD
+        'position'=>View::POS_HEAD
     ];
     public $depends = [
-
+        'yii\web\JqueryAsset',
+        'yii\web\YiiAsset',
+        'yii\bootstrap\BootstrapAsset',
     ];
 }
