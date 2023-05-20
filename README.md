@@ -42,8 +42,3 @@ ttiantianle/upload/src/UploadWidgets.php中的uploadFile方法
         initialPreviewConfig:$initialPreviewConfig,
     })});
 ```
-
-### 参考
-- http://www.jq22.com/jquery-info5231
-- https://www.yiichina.com/doc/guide/2.0/structure-assets
-- tcpadmin的指导
